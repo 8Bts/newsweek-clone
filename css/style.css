@@ -1,0 +1,32 @@
+.page-container { max-width: 1328px; }
+
+/* ======================================= Nav Section ======================================= */
+
+.nav-top {
+  background-color: #f72210;
+  height: 50px;
+}
+
+.nav-top time { display: none; }
+
+.nav-logo { 
+  width: 132px;
+  height: 20px;
+}
+
+@media screen and (min-width: 992px) {
+
+  .nav-top { height: auto; }
+  
+  .nav-top time { display: inline-block; }
+
+  .nav-logo { 
+    width: 392px;
+    height: 61px;
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+  }
+
+
+}
+
