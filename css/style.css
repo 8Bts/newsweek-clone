@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
+* { box-sizing: border-box; }
+
 :root {
   --prime-color: #f72210;
 }
+
+a { color: black; }
+
+a:hover { text-decoration: none; }
 
 .page-container { 
   max-width: 1309px;
@@ -38,12 +44,74 @@
   font-weight: 600;
   font-size: 1.15rem;
   background-color: white;
+  padding: 0.2em;
   border: none;
   margin-left: 0.5em;
 }
 
 .btn-subs i {
   margin-left: 0.5em;
+}
+
+.btn-nav-menu {
+  background-color: transparent;
+  border: none;
+  color: #fb9a94;
+  font-size: 1.8rem;
+}
+
+.nav-bottom {
+  display: none;
+  background-color: white;
+  padding: 0.86em 0.2em;
+  padding-right: 158px;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-bottom .nav-bottom-links{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-bottom-links span{
+  display: inline-block;
+  white-space: nowrap;
+  flex-grow: 1;
+  padding: 0.2em 1px;
+  text-align: center;
+  border-right: 1px solid #d9d9d9;
+}
+
+.nav-bottom a {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.nav-bottom-links a:hover { color: var(--prime-color); }
+
+.nav-bottom-right {
+  position: absolute;
+  top: 18px;
+  right: 4.6em;
+  color: rgba(0,0,0,.36);
+}
+
+.search-span {
+  
+  font-size: 1.032rem;
+  margin-right: 0.3em;
+}
+
+.curvy-span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  border-left: 12px solid white;
+  border-top: 13px solid var(--prime-color);
 }
 
 @media screen and (min-width: 992px) {
@@ -69,6 +137,8 @@
     position: relative;
     left: 15px;
   }
+
+  .nav-bottom { display: block; }
 
 
 }
