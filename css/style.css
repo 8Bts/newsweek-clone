@@ -6,7 +6,9 @@
   --prime-color: #f72210;
 }
 
-a { color: black; }
+div { font-family: 'Roboto Condensed', sans-serif; }
+
+a { color: black;}
 
 a:hover { text-decoration: none; }
 
@@ -17,7 +19,8 @@ a:hover { text-decoration: none; }
 
 .font-roboto { font-family: 'Roboto Condensed', sans-serif; }
 
-/* ======================================= Nav Section ======================================= */
+
+/* ============================================== Nav Section ============================================= */
 
 .nav-top {
   background-color: #f72210;
@@ -58,12 +61,14 @@ a:hover { text-decoration: none; }
   border: none;
   color: #fb9a94;
   font-size: 1.8rem;
+  position: relative;
+  top: 4px;
 }
 
 .nav-bottom {
   display: none;
   background-color: white;
-  padding: 0.86em 0.2em;
+  padding: 1em 0.2em;
   padding-right: 158px;
   position: relative;
   border-bottom: 2px solid transparent;
@@ -94,13 +99,12 @@ a:hover { text-decoration: none; }
 
 .nav-bottom-right {
   position: absolute;
-  top: 18px;
+  top: 21px;
   right: 4.6em;
-  color: rgba(0,0,0,.36);
+  color: rgba(0 , 0, 0, 0.36);
 }
 
 .search-span {
-  
   font-size: 1.032rem;
   margin-right: 0.3em;
 }
@@ -114,7 +118,20 @@ a:hover { text-decoration: none; }
   border-top: 13px solid var(--prime-color);
 }
 
+/* =========================================== Main Contents Section ====================================== */
+
+.main-contents {
+  height: 3440px;
+  background-color: white;
+  padding: 0;
+  margin-top: 2px;
+}
+
+
+
 @media screen and (min-width: 992px) {
+
+  /* ============================================== Nav Section ============================================= */
 
   .nav-top {
     height: auto;
@@ -140,6 +157,8 @@ a:hover { text-decoration: none; }
 
   .nav-bottom { display: block; }
 
+/* =========================================== Main Contents Section ====================================== */
+ 
 
 }
 
