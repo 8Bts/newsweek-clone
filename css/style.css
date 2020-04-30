@@ -8,17 +8,27 @@
 
 div { font-family: 'Roboto Condensed', sans-serif; }
 
-a { color: black;}
+a { color: black; }
 
-a:hover { text-decoration: none; }
+a:hover {
+  text-decoration: none;
+  color: black;
+}
 
-.page-container { 
+a.hover-underline:hover { border-bottom: 1px solid var(--prime-color); }
+
+a.hover-prime:hover { color: var(--prime-color); }
+
+a.hover-dark { background-color: #272727; }
+
+.page-container {
   max-width: 1309px;
   height: 2000px;
 }
 
 .font-roboto { font-family: 'Roboto Condensed', sans-serif; }
 
+.font-arial { font-family: Arial, Helvetica, sans-serif; }
 
 /* ============================================== Nav Section ============================================= */
 
@@ -30,7 +40,7 @@ a:hover { text-decoration: none; }
 
 .nav-top time { display: none; }
 
-.nav-logo { 
+.nav-logo {
   width: 132px;
   height: 20px;
   margin-left: 1em;
@@ -74,14 +84,14 @@ a:hover { text-decoration: none; }
   border-bottom: 2px solid transparent;
 }
 
-.nav-bottom .nav-bottom-links{
+.nav-bottom .nav-bottom-links {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   width: 100%;
 }
 
-.nav-bottom-links span{
+.nav-bottom-links span {
   display: inline-block;
   white-space: nowrap;
   flex-grow: 1;
@@ -101,7 +111,7 @@ a:hover { text-decoration: none; }
   position: absolute;
   top: 21px;
   right: 4.6em;
-  color: rgba(0 , 0, 0, 0.36);
+  color: rgba(0, 0, 0, 0.36);
 }
 
 .search-span {
@@ -121,33 +131,115 @@ a:hover { text-decoration: none; }
 /* =========================================== Main Contents Section ====================================== */
 
 .main-contents {
-  height: 3440px;
   background-color: white;
-  padding: 0;
+  padding: 1.2em 0.86em;
   margin-top: 2px;
+}
+
+.common-header {
+  font-weight: 600;
+  color: #a0a0a0;
+  margin-bottom: 0.5em;
+}
+
+.col1-left,
+.col1-right,
+.col2 {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* ==== Col Card styling ==== */
+
+.col-card {
+  padding-bottom: 1.2em;
+}
+
+.card-img-link {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.col-card-img {
+  display: block;
+  width: 100%;
+}
+
+.img-span-rw {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.5em 0.9em;
+  background-color: #e7e7e6;
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--prime-color);
+}
+
+.img-span-bw { 
+  color: #3581f4;
+  padding: 1em 0.8em;
+}
+
+.card-h1 {
+  margin-top: 0.3em;
+  margin-bottom: 0.4em;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.card-p { 
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* ====================== */
+
+.mob-hidden-featured {
+  max-width: 330px;
+  margin: auto;
+  line-height: 0;
 }
 
 @media screen and (min-width: 768px) {
 
-/* ============================================== Nav Section ============================================= */
+  /* ============================================== Nav Section ============================================= */
 
-/* =========================================== Main Contents Section ====================================== */
+  /* =========================================== Main Contents Section ====================================== */
 
-  .col1-left { width: 43.5%; }
+  .main-contents { padding: 1.2em 1.035em; }
 
-  .col1-right { width: 56.5%; }
+  .col1-left { width: 44.5%; }
 
+  .col1-right { width: 55.5%; }
+
+  .col1-left,
+  .col1-right,
+  .col2 {
+    margin-bottom: 0;
+    padding: 0 10px;
+    border: none;
+  }
+
+  /* ==== Col Card styling ==== */
+
+  .card-h1 { font-size: 24px; }
+
+  .card-p { font-size: 15px; }
+
+  /* ====================== */
 }
 
 @media screen and (min-width: 992px) {
-
   /* ============================================== Nav Section ============================================= */
 
   .nav-top {
     height: auto;
     align-items: flex-end;
   }
-  
+
   .nav-top time {
     display: inline-block;
     color: white;
@@ -156,7 +248,7 @@ a:hover { text-decoration: none; }
 
   .nav-top-right { margin: 0.9em 0.6em; }
 
-  .nav-logo { 
+  .nav-logo {
     width: 392px;
     height: 61px;
     margin-top: 1.2em;
@@ -167,8 +259,8 @@ a:hover { text-decoration: none; }
 
   .nav-bottom { display: block; }
 
-/* =========================================== Main Contents Section ====================================== */
-  
+  /* =========================================== Main Contents Section ====================================== */
+
   .main-col1 { width: 71.6%; }
 
   .main-col2 { width: 28.4%; }
@@ -176,7 +268,4 @@ a:hover { text-decoration: none; }
   .col1-left { width: 40%; }
 
   .col1-right { width: 60%; }
-
-
 }
-
