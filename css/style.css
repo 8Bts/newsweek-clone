@@ -127,7 +127,17 @@ a:hover { text-decoration: none; }
   margin-top: 2px;
 }
 
+@media screen and (min-width: 768px) {
 
+/* ============================================== Nav Section ============================================= */
+
+/* =========================================== Main Contents Section ====================================== */
+
+  .col1-left { width: 43.5%; }
+
+  .col1-right { width: 56.5%; }
+
+}
 
 @media screen and (min-width: 992px) {
 
@@ -158,7 +168,15 @@ a:hover { text-decoration: none; }
   .nav-bottom { display: block; }
 
 /* =========================================== Main Contents Section ====================================== */
- 
+  
+  .main-col1 { width: 71.6%; }
+
+  .main-col2 { width: 28.4%; }
+
+  .col1-left { width: 40%; }
+
+  .col1-right { width: 60%; }
+
 
 }
 
