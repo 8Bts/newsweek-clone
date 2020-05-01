@@ -203,7 +203,7 @@ a.hover-dark { background-color: #272727; }
   line-height: 20px;
 }
 
-/* ====================== */
+/* ========Sponsored Featured Section============== */
 
 .sponsored-featured {
   max-width: 100%;
@@ -213,6 +213,96 @@ a.hover-dark { background-color: #272727; }
 .sponsored-featured .col-card {
   max-width: 330px;
   margin: auto;
+}
+
+/* ===== Opinion Section ===== */
+
+.opinion-section {
+  padding: 0 15px;
+}
+
+.opinion-description {
+  margin-left: 0.9em;
+}
+
+.opinion-h1 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.opinion-author {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555555;
+  margin-top: 0.5em;
+}
+
+.debate { position: relative; }
+
+.debate-top,
+.debate-bottom { position: relative; }
+
+.debate-top {border-top: 4px solid var(--prime-color); }
+
+.debate-bottom {border-top: 4px solid #1c87fb; }
+
+.d-inner-top {
+  padding: 1px 0 1em;
+  border-bottom: 3px double #d9d9d9;
+}
+
+.debate-img {
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  overflow: hidden;
+}
+
+.debate-img img {
+  display: block;
+  width: 100%;
+  height: 100%
+}
+
+.debate .opinion-h1 {
+  display: inline-block;
+  padding-left: 0.8em;
+}
+
+.debate-author {
+  display: inline-block;
+  margin: 1em 0 3em;
+  font-size: 14px;
+}
+
+.debate-author strong { color: #000; }
+
+.vs-span {
+  display: inline-block;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  color: #e2e2e2;
+  background-color: black;
+  font-size: 21px;
+  padding: 0.3em 0.4em;
+  border-radius: 50%;
+}
+
+.abs-avatar {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 11%;
+  border-radius: 50%;
+  width: 7%;
+}
+
+.abs-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -245,7 +335,7 @@ a.hover-dark { background-color: #272727; }
   /* ===== Top Story Section == */
 
   .top-story-section {
-    float: left;
+  
   }
 
   .top-story-section .card-h1 { font-size: 22px; }
@@ -258,8 +348,8 @@ a.hover-dark { background-color: #272727; }
 
   /* ===== Opinion Section ===== */
 
-  .opinion-section {
-
+  .opinion-section .opinion-h1 {
+    
   }
 
   /* ===== Debate Section ===== */
@@ -276,6 +366,14 @@ a.hover-dark { background-color: #272727; }
 
   /* ===== More Stories Section ===== */
 
+  .more-stories-section {
+
+  }
+
+  .sticky-part-mstories {
+    position: sticky;
+    top: 0;
+  }
   .mstories-img-link {
     padding-right: 1em;
   }
