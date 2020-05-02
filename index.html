@@ -80,9 +80,9 @@
       </nav>
 
       <main>
-        <div class="main-contents container-fluid d-md-block d-flex flex-column">
+        <div class="main-contents container-fluid clearfix d-md-block d-flex flex-column">
 
-          <section class="featured-stories-section col1-md  float-md-left">
+          <section class="featured-stories-section col1-md col1-lg float-md-left order-2">
             <h1 class="common-header">FEATURED STORIES</h1>
 
             <div class="col-card">
@@ -151,7 +151,7 @@
             </div>
           </section>
           
-          <section class="top-story-section col2-md float-md-right">
+          <section class="top-story-section col2-md col2-lg float-md-right float-lg-left order-1">
             <h1 class="common-header">TOP STORY</h1>
             <div class="col-card">
               <a class="card-img-link" href="#">
@@ -167,7 +167,9 @@
             </div>
           </section>
 
-          <section class="heroes-section col2-md float-md-right">
+          <div class="placeholder col3-lg float-lg-right"></div>
+
+          <section class="heroes-section col2-md col2-lg float-md-right float-lg-left order-6">
             <h1 class="common-header">HEROES OF THE PANDEMIC</h1>
             <div class="container-fluid">
               <div class="row">
@@ -223,7 +225,9 @@
             </div>
           </section>
 
-          <section class="culture-travel-section col2-md float-md-right mb-3">
+          <div class="placeholder col3-lg float-lg-right"></div>
+
+          <section class="culture-travel-section col2-md col2-lg float-md-right float-lg-left order-7 mb-3">
             <h1 class="common-header">CULTURE & TRAVEL</h1>
             <div class="container-fluid">
               <div class="row">
@@ -278,8 +282,9 @@
               </div>
             </div>
           </section>
-
-          <section class="more-stories-section col2-md float-md-right">
+          <div class="placeholder col3-lg float-lg-right"></div>
+          
+          <section class="more-stories-section col2-md col2-lg float-md-right float-lg-left order-5">
             <div class="helper-stretch">
               <h1 class="common-header">MORE STORIES</h1>
               <hr>
@@ -442,8 +447,9 @@
 
           </section>
 
+          <div class="placeholder3x col3-lg float-lg-right"></div>
 
-          <section class="sponsored-featured col1-md float-md-left">
+          <section class="sponsored-featured col1-md col1-lg float-md-left order-4">
 
             <div class="col-card">
               <a class="card-img-link" href="#">
@@ -505,9 +511,9 @@
             </div>
           </section>
 
-          <div class="clearfix"></div>
-
-          <section class="opinion-section font-roboto">
+          <div class="clearfix d-lg-none"></div>
+          
+          <section class="opinion-section font-roboto col3-lg float-lg-right order-3">
 
             <h1 class="common-header">OPINION</h1>
 
@@ -566,12 +572,12 @@
 
             <div class="debate">
               <div class="debate-top">
-                <div class="d-flex align-items-center d-inner-top">
+                <div class="d-inner-top d-flex align-items-center">
                   <a class="debate-img" href="#">
                     <img src="./img/trump-pence.webp" alt="trump-pence">
                   </a>
-                  <h1 class="opinion-h1">
-                    <a class="hover-prime" href="#">As States Clam Up to Endure Pandemic, Roma Are Left Out in the Cold</a>
+                  <h1 class="opinion-h1 text-left pl-3">
+                    <a class="hover-prime" href="#">Trump's Right. The WHO Is Not Fit for Purpose</a>
                   </h1>
                 </div>
                 <div class="d-inner-bottom">
@@ -585,11 +591,11 @@
               </div>
   
               <div class="debate-bottom">
-                <div class="d-flex align-items-center d-inner-top">
+                <div class="d-inner-top d-flex align-items-center">
                   <a class="debate-img" href="#">
                     <img src="./img/donald-trump.webp" alt="trump-pence">
                   </a>
-                  <h1 class="opinion-h1">
+                  <h1 class="opinion-h1 text-left pl-3">
                     <a class="hover-prime" href="#">Defunding the WHO Mid-Pandemic Is Lunacy</a>
                   </h1>
                 </div>
@@ -607,9 +613,135 @@
 
           </section>
  
-          <section class="latest-news-section">LATEST NEWS</section>
+          <section class="latest-news-section col3-lg float-lg-right order-8">
+            <h1 class="common-header">LATEST NEWS</h1>
 
-          <section class="spensored-2-section">SPONSORED 2</section>
+            <div class="lnew-card d-flex align-items-start">
+              <a href="#">
+                <img src="./img/shark-warning-yellow.webp" alt="shark-warning-yellow">
+              </a>
+              <h1 class="opinion-h1 pl-2">
+                <a class="hover-prime" href="#">Shark Attacks Man on California's Moonlight Beach Two Days After Reopening</a>
+              </h1>
+            </div>
+            <hr>
+
+            <div class="lnew-card d-flex align-items-start">
+              <a href="#">
+                <img src="./img/boston-mayor.webp" alt="boston-mayor">
+              </a>
+              <h1 class="opinion-h1 pl-2">
+                <a class="hover-prime" href="#">Trump's Threat to Withhold Coronavirus Aid a 'Fear Tactic': Boston Mayor</a>
+              </h1>
+            </div>
+            <hr>
+
+            <div class="lnew-card d-flex align-items-start">
+              <a href="#">
+                <img src="./img/istock-arizona-restaurant.webp" alt="istock-arizona-restaurant">
+              </a>
+              <h1 class="opinion-h1 pl-2">
+                <a class="hover-prime" href="#">When Will Arizona Reopen? Restaurants to Offer Dine-in Services in May</a>
+              </h1>
+            </div>
+            <hr>
+
+            <div class="lnew-card d-flex align-items-start">
+              <a href="#">
+                <img src="./img/national-security.webp" alt="national-security">
+              </a>
+              <h1 class="opinion-h1 pl-2">
+                <a class="hover-prime" href="#">Devin Nunes Says Michael Flynn Should Sue the Government Over FBI Notes</a>
+              </h1>
+            </div>
+            <hr>
+
+            <div class="lnew-card d-flex align-items-start">
+              <a href="#">
+                <img src="./img/texas-gov-greg-abbott.webp" alt="texas-gov-greg-abbott">
+              </a>
+              <h1 class="opinion-h1 pl-2">
+                <a class="hover-prime" href="#">Health Experts Suggest Plan to Lift Texas Lockdown Is Premature</a>
+              </h1>
+            </div>
+
+          </section>
+
+          <section class="sponsored-2-section col3-lg float-lg-right order-9">
+
+            <div class="col-card">
+              <a class="card-img-link" href="#">
+                <img class="col-card-img" src="./img/university-virginias.jpg" alt="university-virginias">
+                <span class="img-span-rw img-span-bw">SPONSORED INSIGHT</span>
+              </a>
+              <div class="p-3 border">
+                <h1 class="card-h1">
+                  <a class="hover-underline" href="#">What Sets the Leading Liberal Arts Schools Apart?</a>
+                </h1>
+                <p class="font-arial card-p">
+                  There are a number of great Liberal Arts Schools in the USA today, but what qualities do the best of them have?
+                </p>
+              </div>
+            </div>
+
+            <div class="newsettler-block border">
+              <div class="d-flex">
+                <span class="n-logo">N</span>
+                <span class="news-signup">Sign up for our Newsletter</span>
+              </div>
+              <button class="news-button">
+                SIGN UP
+                <i class="fas fa-chevron-right"></i>
+              </button><br>
+              <a class="news-link" href="#">Update your preferences »</a>
+            </div>
+
+            <div class="col-card">
+              <a class="card-img-link" href="#">
+                <img class="col-card-img" src="./img/international-business.jpg" alt="international-business">
+                <span class="img-span-rw img-span-bw">SPONSORED INSIGHT</span>
+              </a>
+              <div class="p-3 border">
+                <h1 class="card-h1">
+                  <a class="hover-underline" href="#">What Qualities Make a Leading University?</a>
+                </h1>
+                <p class="font-arial card-p">
+                  A Leading University has to have a track record of producing well qualified, gifted and employable candidates. Which schools earn the accolade?
+                </p>
+              </div>
+            </div>
+
+            <div class="col-card">
+              <a class="card-img-link" href="#">
+                <img class="col-card-img" src="./img/umt-school.jpg" alt="umt-school">
+                <span class="img-span-rw img-span-bw">SPONSORED INSIGHT</span>
+              </a>
+              <div class="p-3 border">
+                <h1 class="card-h1">
+                  <a class="hover-underline" href="#">How Can a Good Business Education Benefit You?</a>
+                </h1>
+                <p class="font-arial card-p">
+                  Enrolling at a good Business School might be the best investment you can make in your future, and while costs can be significant, the rewards are incalculable. Find out more.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-card">
+              <a class="card-img-link" href="#">
+                <img class="col-card-img" src="./img/newsweek2-getty.jpg" alt="newsweek2-getty">
+                <span class="img-span-rw img-span-bw">SPONSORED INSIGHT</span>
+              </a>
+              <div class="p-3 border">
+                <h1 class="card-h1">
+                  <a class="hover-underline" href="#">What Is Your Accounting And Finance Team Missing?</a>
+                </h1>
+                <p class="font-arial card-p">
+                  Have you ever wanted more from your accounting and finance professionals? These three letters can help.
+                </p>
+              </div>
+            </div>
+
+          </section>
 
         </div>
 
