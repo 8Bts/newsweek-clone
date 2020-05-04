@@ -470,6 +470,9 @@ nav {
 
   /* ===== More Stories Section ===== */
   
+  .helper-stretch {
+    padding-bottom: 1.2em;
+  }
 
   .sticky-part-mstories {
     position: sticky;
@@ -595,6 +598,13 @@ nav {
     position: absolute;
     right: 0;
     top: 1610px
+  }
+
+  /* ===== More Stories Section ===== */
+
+  .more-stories-section {
+    /* position: sticky;
+    top: -850px; */
   }
   
 }

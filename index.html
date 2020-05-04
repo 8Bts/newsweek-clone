@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
   </head>
-  <body class="bg-light">
+  <body class="bg-light" onresize="stickyHeight()" onload="stickyHeight()">
     <div class="page-container mx-auto">
       <nav>
         <div class="nav-div">
@@ -80,7 +80,7 @@
       </nav>
 
       <main>
-        <div class="main-contents container-fluid clearfix d-md-block d-flex flex-column">
+        <div class="main-contents container-fluid clearfix d-md-block d-flex flex-column" >
 
           <section class="featured-stories-section col1-md col1-lg float-md-left order-2">
             <h1 class="common-header">FEATURED STORIES</h1>
@@ -284,8 +284,8 @@
           </section>
           <div class="placeholder col3-lg float-lg-right"></div>
           
-          <section class="more-stories-section col2-md col2-lg float-md-right float-lg-left order-5">
-            <div class="helper-stretch">
+          <section id="more-stories" class="more-stories-section col2-md col2-lg float-md-right float-lg-left order-5">
+            <div id="helper-stretch">
               <h1 class="common-header">MORE STORIES</h1>
               <hr>
   
@@ -449,7 +449,7 @@
 
           <div class="placeholder3x col3-lg float-lg-right"></div>
 
-          <section class="sponsored-featured col1-md col1-lg float-md-left order-4">
+          <section id="sponsored1" class="sponsored-featured col1-md col1-lg float-md-left order-4">
 
             <div class="col-card">
               <a class="card-img-link" href="#">
@@ -741,6 +741,18 @@
               </div>
             </div>
 
+            <div class="newsettler-block border mt-md-5">
+              <div class="d-flex">
+                <span class="n-logo">N</span>
+                <span class="news-signup">Sign up for our Newsletter</span>
+              </div>
+              <button class="news-button">
+                SIGN UP
+                <i class="fas fa-chevron-right"></i>
+              </button><br>
+              <a class="news-link" href="#">Update your preferences »</a>
+            </div>
+
           </section>
 
         </div>
@@ -753,5 +765,21 @@
       src="https://kit.fontawesome.com/e2597287a1.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Change the height of more-stories-section to be in 
+      // same position with sponsored-features-section
+      // in order to get proper horizontal scoll effect
+      // with postion sitcky
+      function stickyHeight(){
+        if(window.innerWidth >= 768){
+          var sponsored = document.getElementById("sponsored1");
+          var moreStories = document.getElementById("helper-stretch");
+          var bottomLine = sponsored.offsetHeight + sponsored.offsetTop;
+          var heightPx = (bottomLine - moreStories.offsetTop -20) + "px";
+          moreStories.style.height = heightPx;
+        }
+      }
+
+    </script>
   </body>
 </html>
