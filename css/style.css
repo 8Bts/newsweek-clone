@@ -136,7 +136,8 @@ nav {
 
 .main-contents {
   position: relative;
-  padding: 1.2em 0;
+  padding: 0;
+  padding-bottom: 1.2em;
   margin-top: 2px;
 }
 
@@ -222,6 +223,23 @@ nav {
   max-width: 100%;
   line-height: 0;
 }
+
+ /* ===== Heroes Section & Culture and Travel Section ===== */
+
+ .heroes-section .card-h1,
+ .culture-travel-section .card-h1 {
+   font-weight: normal;
+   font-size: 20px;
+   font-family: 'Lora', serif;
+   line-height: 1.1;
+ }
+
+ .heroes-section .card-p,
+ .culture-travel-section .card-p {
+   font-size: 15px;
+   color: rgba(39, 39, 39, 0.5);
+ }
+
 
 /* ===== Opinion Section ===== */
 
@@ -319,8 +337,15 @@ nav {
 
 /* ===== Latest News Section ===== */
 
-.latest-news-section {
-  padding: 0 15px;
+.latest-news-section { padding: 0 15px; }
+
+/* ===== More Stories Section ===== */
+  
+.mstories-img-link { padding-right: 1em; }
+
+.more-stories-section .card-h1 {
+  font-size: 17px;
+  margin-top: 0.18em;
 }
 
 /* ===== Sponsored 2 Section ===== */
@@ -389,6 +414,7 @@ nav {
 
   .main-contents section {
     padding: 0 15px;
+    border-bottom: none;
   }
   
   .col1-md { width: 44.5%; }
@@ -443,22 +469,11 @@ nav {
   }
 
   /* ===== More Stories Section ===== */
-
-  .more-stories-section {
-
-  }
+  
 
   .sticky-part-mstories {
     position: sticky;
     top: 0;
-  }
-  .mstories-img-link {
-    padding-right: 1em;
-  }
-
-  .more-stories-section .card-h1 {
-    font-size: 17px;
-    margin-top: 0.18em;
   }
 
   /* ===== Heroes Section & Culture and Travel Section ===== */
