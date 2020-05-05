@@ -408,6 +408,8 @@ nav {
 .in-magazine-container {
   line-height: 0.6;
   padding: 0 15px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 1.2em;
 }
 
 .inmag-first-button {
@@ -449,6 +451,34 @@ nav {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+}
+
+.inmag-last-card {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.inmag-last-card .inmag-img-link {
+  position: relative;
+  display: inline-block;
+}
+
+.inmag-last-card  img { 
+  display: block;
+  width: 100%;
+ }
+
+ .inmag-last-card .inmag-red-span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+ }
+
+/* ============================================ EDITOR'S PICKS SECTION ======================================= */
+
+.editors-pick-container{
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -601,20 +631,23 @@ nav {
     display: block;
   }
 
-  .inmag-last-card .inmag-img-link { height: 71%; }
-
-  .inmag-last-card .inmag-red-span {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-  }
-
 
   .inmag-h1 {
     font-size: 20px;
   }
 
   .inmag-h1:hover { margin-bottom: 15px; }
+  
+  .inmag-last-card .inmag-img-link { 
+    height: 71%;
+    position: relative;
+  }
+  
+  .inmag-last-card .inmag-red-span {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+  }
 
 }
 
