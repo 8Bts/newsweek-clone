@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
   </head>
-  <body class="bg-light" onresize="stickyHeight()" onload="stickyHeight()">
+  <body class="bg-light" onresize="addHeight()">
     <div class="page-container mx-auto">
       <nav>
         <div class="nav-div">
@@ -284,7 +284,7 @@
           </section>
           <div class="placeholder col3-lg float-lg-right"></div>
           
-          <section id="more-stories" class="more-stories-section col2-md col2-lg float-md-right float-lg-left order-5">
+          <section id="more-stories" class="border more-stories-section col2-md col2-lg float-md-right float-lg-left order-5">
             <div id="helper-stretch">
               <h1 class="common-header">MORE STORIES</h1>
               <hr>
@@ -757,7 +757,127 @@
 
         </div>
 
-      </main>
+        <div class="in-magazine-container bg-white">
+          <header class="magazine-top-header d-flex justify-content-center align-items-center pb-3 pt-4">
+            <span class="n-logo m-0 py-2">N</span>
+            <span class="news-signup pl-2">In the magazine</span>
+          </header>
+          <hr class="d-none d-md-block">
+          <section class="inmag-cards">
+            <div class="inmag-first-card">
+              <a class="card-img-link" href="#">
+                <img class="w-100" src="./img/may-08-15-2020.webp" alt="may-08-15-2020">
+                <span class="img-span-rw">MAY 15 ISSUE</span>
+              </a>
+              <button class="inmag-first-button w-100">
+                SEE ALL FEATURES
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <div class="in-mag-card">
+              <a class="inmag-img-link" href="#">
+                <img class="" src="./img/classof2020.webp" alt="classof2020">
+              </a>
+              <div>
+                <span class="inmag-red-span">FEATURES</span>
+                <span class="inmag-rt-span">
+                  <a href="#">EDUCATION</a>
+                </span>
+              </div>
+              <h1 class="inmag-h1">
+                <a href="#" class="hover-underline">The Class of 2020 Is All Dressed Up With Nowhere to Go</a>
+              </h1>
+            </div>
+
+            <div class="in-mag-card">
+              <a class="inmag-img-link" href="#">
+                <img class="" src="./img/fe-class.webp" alt="fe-class">
+              </a>
+              <div>
+                <span class="inmag-red-span">FEATURES</span>
+                <span class="inmag-rt-span">
+                  <a href="#">EDUCATION</a>
+                </span>
+              </div>
+              <h1 class="inmag-h1">
+                <a href="#" class="hover-underline">Advice to the Class of 2020 from People Who Graduated in the Last Recession</a>
+              </h1>
+            </div>
+
+            <div class="in-mag-card">
+              <a class="inmag-img-link" href="#">
+                <img class="" src="./img/fe-giving-pledge.webp" alt="fe-giving-pledge">
+              </a>
+              <div>
+                <span class="inmag-red-span">FEATURES</span>
+                <span class="inmag-rt-span">
+                  <a href="#">BUSINESS</a>
+                </span>
+              </div>
+              <h1 class="inmag-h1">
+                <a href="#" class="hover-underline">Buffett/Gates: Their "Giving Pledge" is 10 years old. Is it a Success? </a>
+              </h1>
+            </div>
+
+            <div class="in-mag-card">
+              <a class="inmag-img-link" href="#">
+                <img class="" src="./img/donald-trump-coronavirus.webp" alt="donald-trump">
+              </a>
+              <div>
+                <span class="inmag-red-span">PERISCOPE</span>
+                <span class="inmag-rt-span">
+                  <a href="#">CULTURE</a>
+                </span>
+              </div>
+              <h1 class="inmag-h1">
+                <a href="#" class="hover-underline">Trump Says We're Opening Up; Scientists Say We'll Be Back in Lockdown Again</a>
+              </h1>
+            </div>
+
+            <div class="in-mag-card">
+              <a class="inmag-img-link" href="#">
+                <img class="" src="./img/cul-cbd-banner.webp" alt="cul-cbd-banner">
+              </a>
+              <div>
+                <span class="inmag-red-span">DOWNTIME</span>
+                <span class="inmag-rt-span">
+                  <a href="#">CULTURE</a>
+                </span>
+              </div>
+              <h1 class="inmag-h1">
+                <a href="#" class="hover-underline">Soothing CBD Gifts for an Anxious Time</a>
+              </h1>
+            </div>
+
+            <div class="in-mag-card">
+              <a class="inmag-img-link" href="#">
+                <img class="" src="./img/cul-ps-minhaj.webp" alt="cul-ps-minhaj">
+              </a>
+              <div>
+                <span class="inmag-red-span">DOWNTIME</span>
+                <span class="inmag-rt-span">
+                  <a href="#">CULTURE</a>
+                </span>
+              </div>
+              <h1 class="inmag-h1">
+                <a href="#" class="hover-underline">Hasan Minhaj on a Post-Covid-19 'Patriot Act' on Netflix</a>
+              </h1>
+            </div>
+
+            <div class="in-mag-card inmag-last-card">
+              <a class="inmag-img-link" href="#">
+                <img class="" src="./img/potters-field.jpg" alt="cul-ps-minhaj">
+                <span class="inmag-red-span">IN FOCUS</span>
+              </a>
+              
+              <h1 class="inmag-h1 mt-3">
+                <a href="#" class="hover-underline">POTTER'S FIELD</a>
+              </h1>
+            </div>
+
+
+          </section>  
 
       <footer></footer>
     </div>
@@ -765,21 +885,6 @@
       src="https://kit.fontawesome.com/e2597287a1.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Change the height of more-stories-section to be in 
-      // same position with sponsored-features-section
-      // in order to get proper horizontal scoll effect
-      // with postion sitcky
-      function stickyHeight(){
-        if(window.innerWidth >= 768){
-          var sponsored = document.getElementById("sponsored1");
-          var moreStories = document.getElementById("helper-stretch");
-          var bottomLine = sponsored.offsetHeight + sponsored.offsetTop;
-          var heightPx = (bottomLine - moreStories.offsetTop -20) + "px";
-          moreStories.style.height = heightPx;
-        }
-      }
-
-    </script>
+    <script src="height.js"></script>
   </body>
 </html>

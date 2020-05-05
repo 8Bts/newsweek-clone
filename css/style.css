@@ -32,7 +32,7 @@ a.hover-dark { background-color: #272727; }
 
 nav {
   position: sticky;
-  top: 0;
+  top: -3px;
   z-index: 2;
 }
 
@@ -137,7 +137,6 @@ nav {
 .main-contents {
   position: relative;
   padding: 0;
-  padding-bottom: 1.2em;
   margin-top: 2px;
 }
 
@@ -350,7 +349,10 @@ nav {
 
 /* ===== Sponsored 2 Section ===== */
 
-.sponsored-2-section { line-height: 0; }
+.sponsored-2-section { 
+  line-height: 0;
+  margin-bottom: 0;
+}
 
 .newsettler-block {
   width: 300px;
@@ -399,6 +401,54 @@ nav {
   font-size: 15px;
   font-weight: 700;
   color: #666;
+}
+
+/* ============================================ IN MAGAZINE SECTION ========================================= */
+
+.in-magazine-container {
+  line-height: 0.6;
+  padding: 0 15px;
+}
+
+.inmag-first-button {
+  background-color: #f4f5f6;
+  border: none;
+  padding: 0.6em;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.inmag-first-button:hover {
+  background-color: #dbdcdd;
+}
+
+.in-mag-card { 
+  line-height: 1.1;
+  margin-bottom: 1.8em;
+ }
+
+
+
+.inmag-red-span {
+  display: inline-block;
+  background-color: var(--prime-color);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 4px 7px;
+  margin: 0.5em 7px 10px 0;
+}
+
+.inmag-rt-span a {
+  color: var(--prime-color);
+  font-weight: 600;
+}
+
+.inmag-h1 {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -505,6 +555,66 @@ nav {
    .sponsored-2-section {
     
   }
+
+  /* ============================================ IN MAGAZINE SECTION ========================================= */
+
+  /* .inmag-img-link {
+    display: inline-block;
+    margin-top: 0em;
+    height: 75%;
+    overflow: hidden;
+  }
+  
+  .inmag-img-link img {
+    display: block;
+    transform: translate(0, 40%) scale(1.5);
+  } */
+
+  .inmag-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2em;
+  }
+
+  .in-mag-card {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 0;
+  }
+
+  .inmag-img-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: 2em;
+    height: 65%;
+  }
+
+  .inmag-img-link img {
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) scale(1.08);
+    display: block;
+  }
+
+  .inmag-last-card .inmag-img-link { height: 71%; }
+
+  .inmag-last-card .inmag-red-span {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+  }
+
+
+  .inmag-h1 {
+    font-size: 20px;
+  }
+
+  .inmag-h1:hover { margin-bottom: 15px; }
 
 }
 
