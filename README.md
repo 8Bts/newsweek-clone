@@ -1,35 +1,30 @@
 # Responsive Web Design
 
-This project is a clone of the home page of <a href="https://thenextweb.com/"  target="_blank">thenextweb.com</a>: 
+This project is a clone of the home page of <a href="https://www.newsweek.com/">newseek.com</a>: 
 
 ## Desktop
-![screenshot](https://github.com/temesghentekeste/thenextweb-clone/blob/homepage/images/app-screenshot.png)
+![screenshot](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/destkop.png)
 
 ## Tablet
-![screenshot](https://github.com/temesghentekeste/thenextweb-clone/blob/homepage/images/app-screenshot-tablet.png)
+[screenshot](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/tablet.png)
 
 ## Mobile
-![screenshot](https://github.com/temesghentekeste/thenextweb-clone/blob/homepage/images/app-screenshot-mobile.png)
+[screenshot](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/mobile.png)
 
 ## Built With
 
 - HTML,
 - CSS,
+- Bootsrap 4,
+- JQuery 3.4.1
 - VS Code
-- Firefox Developer Edition dev tools
+- Firefox Developer Edition
 
 ## Live Demo
 
 <a href="https://rawcdn.githack.com/temesghentekeste/thenextweb-clone/31d0f0eec6c8df4f53796a7734b09342a695ce5a/index.html" target="_blank">Live version</a>
 
-## Authors
-
-👤 **Temesghen Tekeste**
-
-- Github: [temesghentekeste](https://github.com/temesghentekeste)
-- Twitter: [@temesghentekes1](https://twitter.com/temesghentekes1)
-- Linkedin: [linkedin](https://www.linkedin.com/in/temesghen-tekeste-bahta-8b5243193/)
-- Email:  mail.temesghen.tekeste@gmail.com
+## Author
 
 👤 **Rashid Mammadli**
 
@@ -42,7 +37,7 @@ This project is a clone of the home page of <a href="https://thenextweb.com/"  t
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the <a href="https://github.com/temesghentekeste/thenextweb-clone/issues" target="_blank">issues page</a>.
+Feel free to check the <a href="https://github.com/8Bts/newsweek-clone/issues" target="_blank">issues page</a>.
 
 ## Show your support
 
