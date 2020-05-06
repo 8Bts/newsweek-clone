@@ -6,10 +6,10 @@ This project is a clone of the home page of <a href="https://www.newsweek.com/">
 ![screenshot](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/destkop.png)
 
 ## Tablet
-[screenshot](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/tablet.png)
+[screenshot of tablet version](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/tablet.png)
 
 ## Mobile
-[screenshot](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/mobile.png)
+[screenshot of mobile version](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/mobile.png)
 
 ## Built With
 
@@ -22,7 +22,7 @@ This project is a clone of the home page of <a href="https://www.newsweek.com/">
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/temesghentekeste/thenextweb-clone/31d0f0eec6c8df4f53796a7734b09342a695ce5a/index.html" target="_blank">Live version</a>
+<a href="https://rawcdn.githack.com/8Bts/newsweek-clone/a77e9a1ba6ad08956363cd725844dbdc896c6278/index.html" target="_blank">Live version</a>
 
 ## Author
 

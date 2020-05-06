@@ -42,7 +42,7 @@ nav {
   align-items: center;
 }
 
-.nav-top time { display: none; }
+.nav-top .time-span { display: none; }
 
 .nav-logo {
   width: 132px;
@@ -203,7 +203,7 @@ nav {
   white-space: nowrap;
 }
 
-.card-h1 {
+.card-h2 {
   margin-top: 0.3em;
   margin-bottom: 0.4em;
   font-size: 20px;
@@ -225,8 +225,8 @@ nav {
 
 /* ===== Heroes Section & Culture and Travel Section ===== */
 
-.heroes-section .card-h1,
-.culture-travel-section .card-h1 {
+.heroes-section .card-h2,
+.culture-travel-section .card-h2 {
   font-weight: normal;
   font-size: 20px;
   font-family: 'Lora', serif;
@@ -250,7 +250,7 @@ nav {
   margin-left: 0.9em;
 }
 
-.opinion-h1 {
+.opinion-h2 {
   font-size: 17px;
   font-weight: 600;
 }
@@ -290,7 +290,7 @@ nav {
   height: 100%;
 }
 
-.debate .opinion-h1 {
+.debate .opinion-h2 {
   display: inline-block;
   width: 73%;
   height: 100%;
@@ -342,7 +342,7 @@ nav {
 
 .mstories-img-link { padding-right: 1em; }
 
-.more-stories-section .card-h1 {
+.more-stories-section .card-h2 {
   font-size: 17px;
   margin-top: 0.18em;
 }
@@ -444,7 +444,7 @@ nav {
   font-weight: 600;
 }
 
-.inmag-h1 {
+.inmag-h2 {
   display: inline-block;
   font-weight: 600;
   font-size: 16px;
@@ -479,12 +479,12 @@ nav {
 
 /* ============================================ Last Articles SECTION ======================================= */
 
-.last-articles-container { 
+.last-articles-container {
   padding: 0 15px;
   border-bottom: 1px solid #e2e2e2;
 }
 
-.row-h1 {
+.row-h2 {
   color: var(--prime-color);
   font-size: 22px;
   font-weight: 600;
@@ -501,7 +501,7 @@ nav {
   width: 100%;
 }
 
-.la-h1 {
+.la-h2 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 1em;
@@ -533,7 +533,7 @@ nav {
   margin: 12px 0;
 }
 
-.la-flex-h1 { font-weight: 600; }
+.la-flex-h2 { font-weight: 600; }
 
 /* ============================================ Newsletter Section =========================================== */
 
@@ -549,7 +549,8 @@ nav {
   text-transform: uppercase;
 }
 
-.newsletter-subscribe, .newsletter-newsletter { 
+.newsletter-subscribe,
+.newsletter-newsletter {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #e2e2e2;
@@ -612,7 +613,7 @@ footer {
   padding: 30px 15px 30px;
 }
 
-footer hr {
+.footer-hr {
   margin: 0 0 12px;
 }
 
@@ -640,7 +641,7 @@ footer hr {
 
 .f-icon-link i:hover { color: var(--primary); }
 
-.footer-bottom { 
+.footer-bottom {
   font-size: 14px;
   line-height: 16px;
 }
@@ -667,7 +668,6 @@ footer hr {
   white-space: nowrap;
   line-height: 1.9;
 }
-
 
 @media screen and (min-width: 768px) {
   /* ============================================== Nav Section ============================================= */
@@ -697,35 +697,13 @@ footer hr {
 
   /* ==== Col Card styling ==== */
 
-  .card-h1 { font-size: 24px; }
+  .card-h2 { font-size: 24px; }
 
   .card-p { font-size: 15px; }
 
   /* ===== Top Story Section == */
 
-  .top-story-section {
-
-  }
-
-  .top-story-section .card-h1 { font-size: 22px; }
-
-  /* ===== Featured Stories Section ===== */
-
-  .featured-stories-section {
-
-  }
-
-  /* ===== Opinion Section ===== */
-
-  .opinion-section .opinion-h1 {
-
-  }
-
-  /* ===== Debate Section ===== */
-
-  .debate-section {
-
-  }
+  .top-story-section .card-h2 { font-size: 22px; }
 
   /* ===== Sponsored Featured Section ===== */
 
@@ -748,8 +726,8 @@ footer hr {
 
   /* ===== Heroes Section & Culture and Travel Section ===== */
 
-  .heroes-section .card-h1,
-  .culture-travel-section .card-h1 {
+  .heroes-section .card-h2,
+  .culture-travel-section .card-h2 {
     font-weight: normal;
     font-size: 20px;
     font-family: 'Lora', serif;
@@ -759,18 +737,6 @@ footer hr {
   .heroes-section .card-p,
   .culture-travel-section .card-p {
     color: rgba(39, 39, 39, 0.5);
-  }
-
-  /* ===== Latest News Section ===== */
-
-  .latest-news-section {
-
-  }
-
-  /* ===== Sponsored 2 Section ===== */
-
-  .sponsored-2-section {
-
   }
 
   /* ============================================ IN MAGAZINE SECTION ========================================= */
@@ -806,11 +772,11 @@ footer hr {
     display: block;
   }
 
-  .inmag-h1 {
+  .inmag-h2 {
     font-size: 20px;
   }
 
-  .inmag-h1:hover { margin-bottom: 15px; }
+  .inmag-h2:hover { margin-bottom: 15px; }
 
   .inmag-last-card .inmag-img-link {
     height: 71%;
@@ -825,10 +791,10 @@ footer hr {
 
   /* ============================================ Last Articles SECTION ======================================= */
 
-  .la-h1 { font-size: 22px; }
+  .la-h2 { font-size: 22px; }
 
   /* ============================================ Newsletter Section =========================================== */
-  
+
   .newsletter-container h2 {
     padding: 30px 0 20px;
   }
@@ -836,13 +802,14 @@ footer hr {
   .newsletter-subscribe {
     padding-left: 30px;
   }
-  
-  .newsletter-subscribe, .newsletter-newsletter {
+
+  .newsletter-subscribe,
+  .newsletter-newsletter {
     padding-bottom: 3em;
     margin-bottom: 2px;
     border-bottom: none;
   }
-  
+
   .newsletter-subscribe .container-fluid {
     padding-top: 30px;
   }
@@ -853,18 +820,18 @@ footer hr {
     margin-bottom: 0;
     background: rgba(0, 0, 0, 0) url("/img/starting5-homepage.png") no-repeat scroll center center / cover;
   }
-  
+
   .nn-right {
     width: 40%;
     margin: 0 2em 0 1em;
     text-align: center;
   }
-  
+
   .nn-button { margin: 30px 0 52px; }
 
   /* ============================================== Footer Section ============================================= */
 
-  .f-bottom-link { 
+  .f-bottom-link {
     padding-left: 0;
     padding-right: 1em;
   }
@@ -874,7 +841,6 @@ footer hr {
     padding-left: 1em;
     border-right: 1px solid #d9d9d9;
   }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -887,7 +853,7 @@ footer hr {
     align-items: flex-end;
   }
 
-  .nav-top time {
+  .nav-top .time-span {
     display: inline-block;
     color: white;
     margin: 1.3em 1.84em;
