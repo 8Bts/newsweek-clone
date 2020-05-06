@@ -140,7 +140,7 @@ nav {
   margin-top: 2px;
 }
 
-.main-contents section { 
+.main-contents section {
   background-color: white;
   margin-bottom: 1.1em;
   padding: 15px;
@@ -188,7 +188,7 @@ nav {
   color: var(--prime-color);
 }
 
-.img-span-bw { 
+.img-span-bw {
   color: #3581f4;
   padding: 1em 0.8em;
 }
@@ -211,7 +211,7 @@ nav {
   line-height: 1;
 }
 
-.card-p { 
+.card-p {
   font-size: 13px;
   line-height: 20px;
 }
@@ -223,21 +223,21 @@ nav {
   line-height: 0;
 }
 
- /* ===== Heroes Section & Culture and Travel Section ===== */
+/* ===== Heroes Section & Culture and Travel Section ===== */
 
- .heroes-section .card-h1,
- .culture-travel-section .card-h1 {
-   font-weight: normal;
-   font-size: 20px;
-   font-family: 'Lora', serif;
-   line-height: 1.1;
- }
+.heroes-section .card-h1,
+.culture-travel-section .card-h1 {
+  font-weight: normal;
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  line-height: 1.1;
+}
 
- .heroes-section .card-p,
- .culture-travel-section .card-p {
-   font-size: 15px;
-   color: rgba(39, 39, 39, 0.5);
- }
+.heroes-section .card-p,
+.culture-travel-section .card-p {
+  font-size: 15px;
+  color: rgba(39, 39, 39, 0.5);
+}
 
 
 /* ===== Opinion Section ===== */
@@ -259,7 +259,7 @@ nav {
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
-  color: #555555;
+  color: #555;
   margin-top: 0.5em;
 }
 
@@ -268,9 +268,9 @@ nav {
 .debate-top,
 .debate-bottom { position: relative; }
 
-.debate-top {border-top: 4px solid var(--prime-color); }
+.debate-top { border-top: 4px solid var(--prime-color); }
 
-.debate-bottom {border-top: 4px solid #1c87fb; }
+.debate-bottom { border-top: 4px solid #1c87fb; }
 
 .d-inner-top {
   padding: 1px 0 1em;
@@ -287,16 +287,16 @@ nav {
 .debate-img img {
   display: block;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .debate .opinion-h1 {
   display: inline-block;
-  padding-left: 0.8em;
   width: 73%;
   height: 100%;
   text-align: center;
   padding: 1em 0;
+  padding-left: 0.8em;
 }
 
 .debate-author {
@@ -339,7 +339,7 @@ nav {
 .latest-news-section { padding: 0 15px; }
 
 /* ===== More Stories Section ===== */
-  
+
 .mstories-img-link { padding-right: 1em; }
 
 .more-stories-section .card-h1 {
@@ -349,7 +349,7 @@ nav {
 
 /* ===== Sponsored 2 Section ===== */
 
-.sponsored-2-section { 
+.sponsored-2-section {
   line-height: 0;
   margin-bottom: 0;
 }
@@ -424,12 +424,10 @@ nav {
   background-color: #dbdcdd;
 }
 
-.in-mag-card { 
+.in-mag-card {
   line-height: 1.1;
   margin-bottom: 1.8em;
- }
-
-
+}
 
 .inmag-red-span {
   display: inline-block;
@@ -441,7 +439,7 @@ nav {
   margin: 0.5em 7px 10px 0;
 }
 
-.inmag-rt-span a {
+.inmag-rt-span * {
   color: var(--prime-color);
   font-weight: 600;
 }
@@ -463,17 +461,17 @@ nav {
   display: inline-block;
 }
 
-.inmag-last-card  img { 
+.inmag-last-card img {
   display: block;
   width: 100%;
- }
+}
 
- .inmag-last-card .inmag-red-span {
+.inmag-last-card .inmag-red-span {
   position: absolute;
   bottom: 0;
   left: 0;
   margin: 0;
- }
+}
 
 /* ============================================ EDITOR'S PICKS SECTION ======================================= */
 
@@ -481,7 +479,10 @@ nav {
 
 /* ============================================ Last Articles SECTION ======================================= */
 
-.last-articles-container { padding: 0 15px; }
+.last-articles-container { 
+  padding: 0 15px;
+  border-bottom: 1px solid #e2e2e2;
+}
 
 .row-h1 {
   color: var(--prime-color);
@@ -505,6 +506,8 @@ nav {
   font-weight: 600;
   margin-bottom: 1em;
 }
+
+.la-flex-box { margin-bottom: 20px; }
 
 .la-flex-box .la-card {
   display: flex;
@@ -532,8 +535,141 @@ nav {
 
 .la-flex-h1 { font-weight: 600; }
 
-@media screen and (min-width: 768px) {
+/* ============================================ Newsletter Section =========================================== */
 
+.newsletter-container {
+  padding: 20px 15px 0;
+}
+
+.newsletter-container h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--prime-color);
+  padding: 20px 0 11px;
+  text-transform: uppercase;
+}
+
+.newsletter-subscribe, .newsletter-newsletter { 
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.mag-covers {
+  width: 252px;
+  height: 241px;
+  position: relative;
+}
+
+.mag-covers img {
+  width: 170px;
+  height: 228px;
+}
+
+.mag-covers .second-img {
+  position: absolute;
+  top: 13px;
+  left: 80px;
+}
+
+.news-sub-right { padding: 38px 45px 62px 35px; }
+
+.news-h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.news-p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.nn-left {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 1em;
+  background: rgba(0, 0, 0, 0) url("/img/starting5-homepage.png") no-repeat scroll center center / cover;
+}
+
+.nn-right {
+  text-align: center;
+}
+
+.nn-button {
+  background-color: #f72210;
+  margin-bottom: 20px;
+}
+
+.nn-button:hover { background-color: #de1f0e; }
+
+/* =============================================== Footer Section ============================================ */
+
+footer {
+  padding: 30px 15px 30px;
+}
+
+footer hr {
+  margin: 0 0 12px;
+}
+
+.footer-logo {
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+
+.f-copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.f-icons { margin-bottom: 12px; }
+
+.f-icon-link i {
+  font-size: 22px;
+  color: #666;
+  margin: 0 5px;
+}
+
+.f-icon-link i:hover { color: var(--primary); }
+
+.footer-bottom { 
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.f-editions {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.editions-span {
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+.f-abouts {
+  font-family: Arial, Helvetica, sans-serif;
+  flex-flow: row wrap;
+}
+
+.f-bottom-link {
+  color: #666;
+  padding-right: 1.2em;
+  white-space: nowrap;
+  line-height: 1.9;
+}
+
+
+@media screen and (min-width: 768px) {
   /* ============================================== Nav Section ============================================= */
 
   /* =========================================== Main Contents Section ====================================== */
@@ -547,7 +683,7 @@ nav {
     padding: 0 15px;
     border-bottom: none;
   }
-  
+
   .col1-md { width: 44.5%; }
 
   .col2-md { width: 55.5%; }
@@ -568,7 +704,7 @@ nav {
   /* ===== Top Story Section == */
 
   .top-story-section {
-  
+
   }
 
   .top-story-section .card-h1 { font-size: 22px; }
@@ -576,19 +712,19 @@ nav {
   /* ===== Featured Stories Section ===== */
 
   .featured-stories-section {
-    
+
   }
 
   /* ===== Opinion Section ===== */
 
   .opinion-section .opinion-h1 {
-    
+
   }
 
   /* ===== Debate Section ===== */
 
   .debate-section {
-    
+
   }
 
   /* ===== Sponsored Featured Section ===== */
@@ -600,7 +736,7 @@ nav {
   }
 
   /* ===== More Stories Section ===== */
-  
+
   .helper-stretch {
     padding-bottom: 1.2em;
   }
@@ -625,31 +761,19 @@ nav {
     color: rgba(39, 39, 39, 0.5);
   }
 
-   /* ===== Latest News Section ===== */
+  /* ===== Latest News Section ===== */
 
-   .latest-news-section {
-    
+  .latest-news-section {
+
   }
 
-   /* ===== Sponsored 2 Section ===== */
+  /* ===== Sponsored 2 Section ===== */
 
-   .sponsored-2-section {
-    
+  .sponsored-2-section {
+
   }
 
   /* ============================================ IN MAGAZINE SECTION ========================================= */
-
-  /* .inmag-img-link {
-    display: inline-block;
-    margin-top: 0em;
-    height: 75%;
-    overflow: hidden;
-  }
-  
-  .inmag-img-link img {
-    display: block;
-    transform: translate(0, 40%) scale(1.5);
-  } */
 
   .inmag-cards {
     display: grid;
@@ -682,18 +806,17 @@ nav {
     display: block;
   }
 
-
   .inmag-h1 {
     font-size: 20px;
   }
 
   .inmag-h1:hover { margin-bottom: 15px; }
-  
-  .inmag-last-card .inmag-img-link { 
+
+  .inmag-last-card .inmag-img-link {
     height: 71%;
     position: relative;
   }
-  
+
   .inmag-last-card .inmag-red-span {
     position: absolute;
     bottom: 0;
@@ -703,6 +826,54 @@ nav {
   /* ============================================ Last Articles SECTION ======================================= */
 
   .la-h1 { font-size: 22px; }
+
+  /* ============================================ Newsletter Section =========================================== */
+  
+  .newsletter-container h2 {
+    padding: 30px 0 20px;
+  }
+
+  .newsletter-subscribe {
+    padding-left: 30px;
+  }
+  
+  .newsletter-subscribe, .newsletter-newsletter {
+    padding-bottom: 3em;
+    margin-bottom: 2px;
+    border-bottom: none;
+  }
+  
+  .newsletter-subscribe .container-fluid {
+    padding-top: 30px;
+  }
+
+  .nn-left {
+    width: 60%;
+    height: auto;
+    margin-bottom: 0;
+    background: rgba(0, 0, 0, 0) url("/img/starting5-homepage.png") no-repeat scroll center center / cover;
+  }
+  
+  .nn-right {
+    width: 40%;
+    margin: 0 2em 0 1em;
+    text-align: center;
+  }
+  
+  .nn-button { margin: 30px 0 52px; }
+
+  /* ============================================== Footer Section ============================================= */
+
+  .f-bottom-link { 
+    padding-left: 0;
+    padding-right: 1em;
+  }
+
+  .f-bottom-link::after {
+    content: " ";
+    padding-left: 1em;
+    border-right: 1px solid #d9d9d9;
+  }
 
 }
 
@@ -737,13 +908,13 @@ nav {
 
   /* =========================================== Main Contents Section ====================================== */
 
-  .main-contents { 
+  .main-contents {
     padding: 1.2em 0.86em;
   }
 
   .col1-lg { width: 28.4%; }
 
-  .col2-lg { 
+  .col2-lg {
     width: 41%;
   }
 
@@ -765,7 +936,7 @@ nav {
   /* ===== Sponsored Featured Section ===== */
 
   .sponsored-featured {
-    position: absolute; 
+    position: absolute;
     top: 2036px;
     left: 0;
   }
@@ -795,7 +966,7 @@ nav {
   .sponsored-2-section {
     position: absolute;
     right: 0;
-    top: 1610px
+    top: 1610px;
   }
 
   /* ===== More Stories Section ===== */
@@ -804,5 +975,4 @@ nav {
     /* position: sticky;
     top: -850px; */
   }
-  
 }
