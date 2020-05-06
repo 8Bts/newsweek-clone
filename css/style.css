@@ -477,9 +477,60 @@ nav {
 
 /* ============================================ EDITOR'S PICKS SECTION ======================================= */
 
-.editors-pick-container{
-  padding: 0 15px;
+.editors-pick-container { padding: 0 15px; }
+
+/* ============================================ Last Articles SECTION ======================================= */
+
+.last-articles-container { padding: 0 15px; }
+
+.row-h1 {
+  color: var(--prime-color);
+  font-size: 22px;
+  font-weight: 600;
 }
+
+.la-img-link {
+  display: inline-block;
+  margin-bottom: 0.5em;
+  flex: none;
+}
+
+.la-img-link img {
+  display: block;
+  width: 100%;
+}
+
+.la-h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.la-flex-box .la-card {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.la-flex-box .la-img-link {
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  margin-bottom: 0;
+  margin-right: 0.7em;
+}
+
+.top .la-img-link { height: 64px; }
+
+.la-flex-box img {
+  display: block;
+  top: 0;
+}
+
+.la-flex-box hr {
+  margin: 12px 0;
+}
+
+.la-flex-h1 { font-weight: 600; }
 
 @media screen and (min-width: 768px) {
 
@@ -648,6 +699,10 @@ nav {
     bottom: 0;
     margin: 0;
   }
+
+  /* ============================================ Last Articles SECTION ======================================= */
+
+  .la-h1 { font-size: 22px; }
 
 }
 

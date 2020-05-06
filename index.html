@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
   </head>
-  <body class="bg-light" onresize="addHeight()">
+  <body class="bg-light" onload="adjustHeight()">
     <div class="page-container mx-auto">
       <nav>
         <div class="nav-div">
@@ -284,7 +284,7 @@
           </section>
           <div class="placeholder col3-lg float-lg-right"></div>
           
-          <section id="more-stories" class="border more-stories-section col2-md col2-lg float-md-right float-lg-left order-5">
+          <section id="more-stories" class="more-stories-section col2-md col2-lg float-md-right float-lg-left order-5">
             <div id="helper-stretch">
               <h1 class="common-header">MORE STORIES</h1>
               <hr>
@@ -876,19 +876,18 @@
               </h1>
             </div>
 
-
           </section>
         </div>
         
         <div class="editors-pick-container bg-white">
-          <header class="magazine-top-header d-flex justify-content-center align-items-center pb-3 pb-md-0 pt-4">
+          <header class="magazine-top-header d-flex justify-content-center align-items-center pb-3 pt-4">
             <span class="n-logo m-0">N</span>
             <span class="news-signup pl-2">Editor's Pick</span>
           </header>
           <hr class="mt-0">
           <div class="row">
 
-            <div class="col-card col-md-3">
+            <div class="col-card col-md-6 col-lg-3">
               <a class="card-img-link" href="#">
                 <img class="col-card-img" src="./img/coronavirus.webp" alt="coronavirus">
                 <span class="img-span-rw">US</span>
@@ -901,7 +900,7 @@
               </p>
             </div>
 
-            <div class="col-card col-md-3">
+            <div class="col-card col-md-6 col-lg-3">
               <a class="card-img-link" href="#">
                 <img class="col-card-img" src="./img/hubei-china-coronavirus.webp" alt="hubei-china-coronavirus">
                 <span class="img-span-rw">NEWS</span>
@@ -914,7 +913,7 @@
               </p>
             </div>
 
-            <div class="col-card col-md-3">
+            <div class="col-card col-md-6 col-lg-3">
               <a class="card-img-link" href="#">
                 <img class="col-card-img" src="./img/us-president-donald-trump.webp" alt="us-president-donald-trump">
                 <span class="img-span-rw">U.S.</span>
@@ -927,7 +926,7 @@
               </p>
             </div>
 
-            <div class="col-card col-md-3">
+            <div class="col-card col-md-6 col-lg-3">
               <a class="card-img-link" href="#">
                 <img class="col-card-img" src="./img/multiple-sclerosis-coronavirus.webp" alt="multiple-sclerosis-coronavirus">
                 <span class="img-span-rw">ESSAYS</span>
@@ -940,7 +939,7 @@
               </p>
             </div>
 
-            <div class="col-card col-md-3">
+            <div class="col-card col-md-6 col-lg-3">
               <a class="card-img-link" href="#">
                 <img class="col-card-img" src="./img/donald-trump-kim-jong-un.webp" alt="donald-trump-kim-jong-un">
                 <span class="img-span-rw">WORLD</span>
@@ -953,7 +952,7 @@
               </p>
             </div>
 
-            <div class="col-card col-md-3">
+            <div class="col-card col-md-6 col-lg-3">
               <a class="card-img-link" href="#">
                 <img class="col-card-img" src="./img/warren-buffett.webp" alt="warren-buffett">
                 <span class="img-span-rw">U.S.</span>
@@ -966,7 +965,7 @@
               </p>
             </div>
 
-            <div class="col-card col-md-3">
+            <div class="col-card col-md-6 col-lg-3">
               <a class="card-img-link" href="#">
                 <img class="col-card-img" src="./img/tanker.webp" alt="tanker">
                 <span class="img-span-rw">WORLD</span>
@@ -979,7 +978,7 @@
               </p>
             </div>
 
-            <div class="col-card col-md-3">
+            <div class="col-card col-md-6 col-lg-3">
               <a class="card-img-link" href="#">
                 <img class="col-card-img" src="./img/mitt-romney.webp" alt="mitt-romney">
                 <span class="img-span-rw">POLITICS</span>
@@ -995,6 +994,318 @@
             
           </div>
         </div>
+
+        <div class="last-articles-container bg-white">
+          
+          <div class="margin-helper d-table"></div>
+          <hr class="m">
+          <h1 class="row-h1 mb-2">U.S.</h1>
+          <div class="row row-us">
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/disney-world.webp" alt="disney-world">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">When Will Disney World Reopen? Resort Unlikely to Open Soon</a>
+              </h1>
+            </div>
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/social-media-smartphone.webp" alt="social-media-smartphone">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">Hundreds of Missouri Residents Fear Consequences of 'Snitching' on Coronavirus Rulebreakers After Information Leaks Online</a>
+              </h1>
+            </div>
+            <div class="col-md-4 la-flex-box">
+              <div class="la-card top">
+                <a class="la-img-link" href="#">
+                  <img src="./img/china-xi-jinping.webp" alt="china-xi-jinping">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">China 'Intentionally Concealed' Severity of Coronavirus Pandemic: Report</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/indiana-gov.webp" alt="indiana-gov">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Indiana Governor Apologizes After Failing to Social Distance in Selfie</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/aj-sneaker.webp" alt="aj-sneaker">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Air Jordan 3 'Varsity Royal' Release Date and Price</a>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <h1 class="row-h1 mb-2">World</h1>
+          <div class="row row-world">
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/heiko-mass-coronavirus.webp" alt="heiko-mass-coronavirus">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">German Foreign Minister Urges Chinese Transparency Over Coronavirus</a>
+              </h1>
+            </div>
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/julianassange.webp" alt="julianassange">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">Assange Extradition Hearing Delayed to at Least September Says WikiLeaks</a>
+              </h1>
+            </div>
+            <div class="col-md-4 la-flex-box">
+              <div class="la-card top">
+                <a class="la-img-link" href="#">
+                  <img src="./img/austerity-makes.webp" alt="austerity-makes">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">U.N. Official Says Austerity Has Caused Poor to Suffer Most From COVID-19</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/people-beach-sanya.webp" alt="people-beach-sanya">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">U.N. Official Says Austerity Has Caused Poor to Suffer Most From COVID-19</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/mark-esper-china.webp" alt="mark-esper-china">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Esper Says China's 5G Push Is 'Malign,' Warns of Beijing's EU Influence</a>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <h1 class="row-h1 mb-2">Business</h1>
+          <div class="row row-world">
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/per-fastcash.webp" alt="per-fastcash">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">Stimulus Check Isn't Enough? Here Are Five Ways to Come Up With Extra Cash</a>
+              </h1>
+            </div>
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/shell-oil.webp" alt="shell-oil">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">Shell Faces 'Crisis of Uncertainty,' Says CEO Amid Historic Oil Slump</a>
+              </h1>
+            </div>
+            <div class="col-md-4 la-flex-box">
+              <div class="la-card top">
+                <a class="la-img-link" href="#">
+                  <img src="./img/coronavirus-small-business.webp" alt="coronavirus-small-business">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Coronavirus Pandemic Forces Small Businesses to Close for Good</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/unemployment-claims.webp" alt="unemployment-claims">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Up to 14 Million Americans Shut Out of Unemployment Benefits</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/fe-giving.webp" alt="fe-giving">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Inside the Next Phase of the Bill and Melinda Gates Foundation</a>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <h1 class="row-h1 mb-2">Tech & Sience</h1>
+          <div class="row row-world">
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/eta-aquarid.webp" alt="eta-aquarid">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">Eta Aquarid Meteor Shower Hailing from Halley's Comet to Light up Night Sky</a>
+              </h1>
+            </div>
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/cantabrian-bear.webp" alt="cantabrian-bear">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">Brown Bear Seen in Northern Spain National Park for First Time in 150 Years</a>
+              </h1>
+            </div>
+            <div class="col-md-4 la-flex-box">
+              <div class="la-card top">
+                <a class="la-img-link" href="#">
+                  <img src="./img/elon-musk.webp" alt="elon-musk">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">SpaceX Starlink Satellites Spotted Over Florida</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/milky-way.webp" alt="milky-way">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Radio Signal Coming from Inside the Milky Way Detected by Astronomers</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/ornate-eagle.webp" alt="ornate-eagle">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Extraordinarily Rare Eagle Ray Filmed Swimming on the Great Barrier Reef</a>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <h1 class="row-h1 mb-2">Culture</h1>
+          <div class="row row-world">
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/star-wars-day.webp" alt="star-wars-day">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">#MayThe4thBeWithYou: Fans Celebrate a Galaxy Far, Far Away</a>
+              </h1>
+            </div>
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/night-season-2-netflix.webp" alt="night-season-2-netflix">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">'Into the Night' Season 2: Will There Be Another Season of Netflix's Show?</a>
+              </h1>
+            </div>
+            <div class="col-md-4 la-flex-box">
+              <div class="la-card top">
+                <a class="la-img-link" href="#">
+                  <img src="./img/billions-season-five.webp" alt="billions-season-five">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">The Most 'Billions'-y Things That Happened on the New 'Billions' Premiere</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/meghan-markle.webp" alt="meghan-markle">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Meghan Markle and Prince Harry Biography 'Finding Freedom' Release Date Set</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/cul-uncharted-animals.webp" alt="cul-uncharted-animals">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Wildlife Encounters From the Safety of Your Couch</a>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <h1 class="row-h1 mb-2">Sports</h1>
+          <div class="row row-world">
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/michael-jordan.webp" alt="michael-jordan">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">Michael Jordan Reveals Meaning of Famous 'Republicans Buy Sneakers' Comment</a>
+              </h1>
+            </div>
+            <div class="col-md-4">
+              <a class="la-img-link" href="#">
+                <img src="./img/charles-barkley.webp" alt="charles-barkley">
+              </a>
+              <h1 class="la-h1">
+                <a class="hover-underline" href="#">Charles Barkley's Stats, Net Worth and Salary History Compared to MJ</a>
+              </h1>
+            </div>
+            <div class="col-md-4 la-flex-box">
+              <div class="la-card top">
+                <a class="la-img-link" href="#">
+                  <img src="./img/michael-jordan-chicago.webp" alt="michael-jordan-chicago">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Michael Jordan Wanted to Sign with Adidas Before Committing to Nike</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/empty-baseball-field.webp" alt="empty-baseball-field">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Losing College and Pro Football This Fall Could Devastate The Economy</a>
+                </h1>
+              </div>
+              <hr>
+
+              <div class="la-card">
+                <a class="la-img-link" href="#">
+                  <img src="./img/kobe-bryant.webp" alt="kobe-bryant">
+                </a>
+                <h1 class="la-flex-h1">
+                  <a class="hover-prime" href="#">Kobe Bryant Honored in 'The Last Dance' Episode Sunday Night</a>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </main>
       <footer></footer>
     </div>
@@ -1002,6 +1313,25 @@
       src="https://kit.fontawesome.com/e2597287a1.js"
       crossorigin="anonymous"
     ></script>
-    <script src="height.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+      function adjustHeight() {
+          var sponsored = document.getElementById("sponsored1");
+          var moreStories = document.getElementById("helper-stretch");
+          var bottomLine = sponsored.offsetHeight + sponsored.offsetTop;
+          var heightPx = (bottomLine - moreStories.offsetTop - 15) + "px";
+          if(window.innerWidth >= 768){
+              moreStories.style.height = heightPx;  
+          }
+          else{
+              moreStories.style.height = "100%";
+          }
+      }
+
+      $(document).ready(function(){
+          $(window).resize(adjustHeight)
+      });
+    </script>
   </body>
 </html>
