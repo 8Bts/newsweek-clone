@@ -644,6 +644,7 @@ footer { padding: 30px 15px 30px; }
   font-family: Arial, Helvetica, sans-serif;
   color: #666;
   margin-bottom: 1em;
+  flex-flow: row wrap;
 }
 
 .editions-span {
