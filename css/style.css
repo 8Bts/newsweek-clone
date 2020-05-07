@@ -66,9 +66,7 @@ nav {
   margin-left: 0.5em;
 }
 
-.btn-subs i {
-  margin-left: 0.5em;
-}
+.btn-subs i { margin-left: 0.5em; }
 
 .btn-nav-menu {
   background-color: transparent;
@@ -162,9 +160,7 @@ nav {
 
 /* ==== Col Card styling ==== */
 
-.col-card {
-  padding-bottom: 1.2em;
-}
+.col-card { padding-bottom: 1.2em; }
 
 .card-img-link {
   display: inline-block;
@@ -242,13 +238,9 @@ nav {
 
 /* ===== Opinion Section ===== */
 
-.opinion-section {
-  padding: 0 15px;
-}
+.opinion-section { padding: 0 15px; }
 
-.opinion-description {
-  margin-left: 0.9em;
-}
+.opinion-description { margin-left: 0.9em; }
 
 .opinion-h2 {
   font-size: 17px;
@@ -393,9 +385,7 @@ nav {
   margin-bottom: 12px;
 }
 
-.news-button:hover {
-  background-color: #999;
-}
+.news-button:hover { background-color: #999; }
 
 .news-link {
   font-size: 15px;
@@ -427,6 +417,16 @@ nav {
 .in-mag-card {
   line-height: 1.1;
   margin-bottom: 1.8em;
+}
+
+.inmag-img-link {
+  display: inline-block;
+  width: 100%;
+}
+
+.inmag-img-link img {
+  display: block;
+  width: 100%;
 }
 
 .inmag-red-span {
@@ -529,9 +529,7 @@ nav {
   top: 0;
 }
 
-.la-flex-box hr {
-  margin: 12px 0;
-}
+.la-flex-box hr { margin: 12px 0; }
 
 .la-flex-h2 { font-weight: 600; }
 
@@ -556,6 +554,8 @@ nav {
   border-bottom: 1px solid #e2e2e2;
 }
 
+.newsletter-subscribe .container-fluid { padding-top: 30px; }
+
 .mag-covers {
   width: 252px;
   height: 241px;
@@ -573,7 +573,7 @@ nav {
   left: 80px;
 }
 
-.news-sub-right { padding: 38px 45px 62px 35px; }
+.news-sub-right { padding: 38px 45px 62px 75px; }
 
 .news-h3 {
   font-weight: 600;
@@ -596,9 +596,7 @@ nav {
   background: rgba(0, 0, 0, 0) url("/img/starting5-homepage.png") no-repeat scroll center center / cover;
 }
 
-.nn-right {
-  text-align: center;
-}
+.nn-right { text-align: center; }
 
 .nn-button {
   background-color: #f72210;
@@ -609,13 +607,9 @@ nav {
 
 /* =============================================== Footer Section ============================================ */
 
-footer {
-  padding: 30px 15px 30px;
-}
+footer { padding: 30px 15px 30px; }
 
-.footer-hr {
-  margin: 0 0 12px;
-}
+.footer-hr { margin: 0 0 12px; }
 
 .footer-logo {
   width: 236px;
@@ -669,6 +663,30 @@ footer {
   line-height: 1.9;
 }
 
+@media screen and (max-width: 390px) {
+  .nav-top-right {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 2px;
+  }
+
+  .nav-sign-in span {
+    font-size: 69%;
+    position: relative;
+    top: -2px;
+  }
+
+  .btn-subs { font-size: 70%; }
+
+  .btn-nav-menu {
+    font-size: 100%;
+    top: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   /* ============================================== Nav Section ============================================= */
 
@@ -715,9 +733,7 @@ footer {
 
   /* ===== More Stories Section ===== */
 
-  .helper-stretch {
-    padding-bottom: 1.2em;
-  }
+  .helper-stretch { padding-bottom: 1.2em; }
 
   .sticky-part-mstories {
     position: sticky;
@@ -741,11 +757,17 @@ footer {
 
   /* ============================================ IN MAGAZINE SECTION ========================================= */
 
+  .in-magazine-container {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
   .inmag-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 2em;
+    padding-bottom: 1em;
   }
 
   .in-mag-card {
@@ -759,24 +781,26 @@ footer {
     display: block;
     overflow: hidden;
     margin-top: 2em;
-    height: 65%;
+    width: 100%;
+    padding-bottom: 100%;
+    flex: none;
   }
 
   .inmag-img-link img {
     position: absolute;
-    width: 400px;
+    width: 100%;
     height: 100%;
     left: 50%;
     top: 0;
     transform: translateX(-50%) scale(1.08);
     display: block;
+    object-fit: cover;
   }
 
   .inmag-h2 {
     font-size: 20px;
+    margin-top: 0.8em;
   }
-
-  .inmag-h2:hover { margin-bottom: 15px; }
 
   .inmag-last-card .inmag-img-link {
     height: 71%;
@@ -795,24 +819,17 @@ footer {
 
   /* ============================================ Newsletter Section =========================================== */
 
-  .newsletter-container h2 {
-    padding: 30px 0 20px;
-  }
+  .newsletter-container h2 { padding: 30px 0 20px; }
 
-  .newsletter-subscribe {
-    padding-left: 30px;
+  .newsletter-subscribe { margin-bottom: 0; }
+
+  .newsletter-newsletter {
+    margin-bottom: 2px;
+    padding-bottom: 3em;
   }
 
   .newsletter-subscribe,
-  .newsletter-newsletter {
-    padding-bottom: 3em;
-    margin-bottom: 2px;
-    border-bottom: none;
-  }
-
-  .newsletter-subscribe .container-fluid {
-    padding-top: 30px;
-  }
+  .newsletter-newsletter { border-bottom: none; }
 
   .nn-left {
     width: 60%;
@@ -874,15 +891,11 @@ footer {
 
   /* =========================================== Main Contents Section ====================================== */
 
-  .main-contents {
-    padding: 1.2em 0.86em;
-  }
+  .main-contents { padding: 1.2em 0.86em; }
 
   .col1-lg { width: 28.4%; }
 
-  .col2-lg {
-    width: 41%;
-  }
+  .col2-lg { width: 41%; }
 
   .col3-lg {
     padding: 0 15px;
@@ -908,9 +921,7 @@ footer {
   }
 
   .sponsored-featured .col-card,
-  .sponsored-2-section .col-card {
-    margin: auto;
-  }
+  .sponsored-2-section .col-card { margin: auto; }
 
   /* ===== Opinion Section ===== */
 
@@ -935,10 +946,9 @@ footer {
     top: 1610px;
   }
 
-  /* ===== More Stories Section ===== */
+  /* ================================== In Magazine Section ====================================== */
 
-  .more-stories-section {
-    /* position: sticky;
-    top: -850px; */
-  }
+  .news-sub-right { padding: 38px 45px 62px 25px; }
+
+  .newsletter-subscribe { margin-bottom: 2px; }
 }

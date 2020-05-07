@@ -2,15 +2,6 @@
 
 This project is a clone of the home page of <a href="https://www.newsweek.com/">newseek.com</a>: 
 
-## Desktop
-![screenshot](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/destkop.png)
-
-## Tablet
-[screenshot of tablet version](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/tablet.png)
-
-## Mobile
-[screenshot of mobile version](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/mobile.png)
-
 ## Built With
 
 - HTML,
@@ -49,3 +40,12 @@ Give a ⭐️ if you like this project!
 - <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
 - <a href="https://www.stackoverflow.com/" target="_blank">Stackoverflow</a>
 - <a href="https://css-tricks.com/" target="_blank">CSS-TRICKS</a>
+
+## Desktop
+![screenshot](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/destkop.png)
+
+## Tablet
+[screenshot of tablet version](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/tablet.png)
+
+## Mobile
+[screenshot of mobile version](https://github.com/8Bts/newsweek-clone/blob/home-page/screenshots/mobile.png)
