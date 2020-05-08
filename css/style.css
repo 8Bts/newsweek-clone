@@ -62,15 +62,12 @@ nav {
   font-size: 1.15rem;
   background-color: white;
   padding: 0.2em;
-  border: none;
-  margin-left: 0.5em;
 }
 
 .btn-subs i { margin-left: 0.5em; }
 
 .btn-nav-menu {
   background-color: transparent;
-  border: none;
   color: #fb9a94;
   font-size: 1.8rem;
   position: relative;
@@ -78,8 +75,6 @@ nav {
 }
 
 .nav-bottom {
-  display: none;
-  background-color: white;
   padding: 1em 0.2em;
   padding-right: 158px;
   position: relative;
@@ -378,10 +373,8 @@ nav {
 .news-button {
   padding: 10px;
   background-color: #666;
-  color: white;
   font-weight: 700;
   font-size: 18px;
-  border: none;
   margin-bottom: 12px;
 }
 
@@ -404,7 +397,6 @@ nav {
 
 .inmag-first-button {
   background-color: #f4f5f6;
-  border: none;
   padding: 0.6em;
   font-weight: 600;
   font-size: 18px;
@@ -451,19 +443,9 @@ nav {
   line-height: 20px;
 }
 
-.inmag-last-card {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
 .inmag-last-card .inmag-img-link {
   position: relative;
   display: inline-block;
-}
-
-.inmag-last-card img {
-  display: block;
-  width: 100%;
 }
 
 .inmag-last-card .inmag-red-span {
@@ -866,16 +848,9 @@ footer { padding: 30px 15px 30px; }
 
   nav { position: static; }
 
-  .nav-top {
-    height: auto;
-    align-items: flex-end;
-  }
+  .nav-top { height: auto; }
 
-  .nav-top .time-span {
-    display: inline-block;
-    color: white;
-    margin: 1.3em 1.84em;
-  }
+  .nav-top .time-span { margin: 1.3em 1.84em; }
 
   .nav-top-right { margin: 0.9em 0.6em; }
 
@@ -887,8 +862,6 @@ footer { padding: 30px 15px 30px; }
     position: relative;
     left: 15px;
   }
-
-  .nav-bottom { display: block; }
 
   /* =========================================== Main Contents Section ====================================== */
 
