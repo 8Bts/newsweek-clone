@@ -702,7 +702,7 @@ footer { padding: 30px 15px 30px; }
   }
 
   .newsletter-subscribe,
-  .newsletter-newsletter { 
+  .newsletter-newsletter {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -815,6 +815,4 @@ footer { padding: 30px 15px 30px; }
   }
 
   /* ================================== In Magazine Section ====================================== */
-
-
 }
