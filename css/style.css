@@ -438,7 +438,7 @@ nav {
   border-bottom: 1px solid #e2e2e2;
 }
 
-.newsletter-subscribe .container-fluid { padding: 30px 0 25px; }
+.newsletter-subscribe .container-fluid { padding: 30px 0 0; }
 
 .mag-covers {
   width: 282px;
@@ -699,11 +699,14 @@ footer { padding: 30px 15px 30px; }
 
   .newsletter-newsletter {
     margin-bottom: 2px;
-    padding-bottom: 3em;
   }
 
   .newsletter-subscribe,
-  .newsletter-newsletter { border-bottom: none; }
+  .newsletter-newsletter { 
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 
   .nn-left {
     height: auto;
@@ -730,6 +733,8 @@ footer { padding: 30px 15px 30px; }
     padding-left: 1em;
     border-right: 1px solid #d9d9d9;
   }
+
+  .helper-white { margin-bottom: 2px; }
 }
 
 @media screen and (min-width: 992px) {
@@ -811,5 +816,5 @@ footer { padding: 30px 15px 30px; }
 
   /* ================================== In Magazine Section ====================================== */
 
-  .newsletter-subscribe { margin-bottom: 2px; }
+
 }
