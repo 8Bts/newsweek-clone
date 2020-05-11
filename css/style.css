@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap');
+
+* { box-sizing: border-box; }
+
+:root {
+  --prime-color: #f72210;
+}
+
+div { font-family: 'Roboto Condensed', sans-serif; }
+
+a { color: black; }
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a.hover-underline:hover { border-bottom: 1px solid var(--prime-color); }
+
+a.hover-prime:hover { color: var(--prime-color); }
+
+a.hover-dark { background-color: #272727; }
+
+.page-container { max-width: 1309px; }
+
+.font-roboto { font-family: 'Roboto Condensed', sans-serif; }
+
+.font-arial { font-family: Arial, Helvetica, sans-serif; }
+
+/* ============================================== Nav Section ============================================= */
+
+nav {
+  position: sticky;
+  top: -3px;
+  z-index: 2;
+}
+
+.nav-top {
+  background-color: #f72210;
+  height: 50px;
+}
+
+.nav-top .time-span { display: none; }
+
+.nav-logo {
+  width: 132px;
+  height: 20px;
+  margin-left: 1em;
+}
+
+.nav-top-right span { font-size: 1.15rem; }
+
+.btn-subs {
+  color: var(--prime-color);
+  font-size: 1.15rem;
+  padding: 0.2em;
+}
+
+.btn-subs i { margin-left: 0.5em; }
+
+.btn-nav-menu {
+  color: #fb9a94;
+  font-size: 1.8rem;
+  top: 4px;
+}
+
+.nav-bottom {
+  padding: 1em 0.2em;
+  padding-right: 158px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-bottom-links span {
+  flex-grow: 1;
+  padding: 0.1em 1px;
+  border-right: 1px solid #d9d9d9;
+}
+
+.nav-bottom a {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.nav-bottom-links a:hover { color: var(--prime-color); }
+
+.nav-bottom-right {
+  top: 17px;
+  right: 6.8em;
+  color: rgba(0, 0, 0, 0.55);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-span {
+  width: 4vw;
+}
+
+.search-span:focus {
+  transition-duration: 0.25s;
+  width: 87vw;
+}
+
+.fa-search {
+  right: 3.8em;
+  top: 18px;
+  color: rgba(0, 0, 0, 0.36);
+}
+
+.curvy-span {
+  top: 0;
+  right: 0;
+  width: 80px;
+  border-left: 12px solid white;
+  border-top: 13px solid var(--prime-color);
+}
+
+/* =========================================== Main Contents Section ====================================== */
+
+.main-contents {
+  padding: 0;
+  margin-top: 2px;
+}
+
+.main-contents section {
+  margin-bottom: 1.1em;
+  padding: 15px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.common-header {
+  color: #a0a0a0;
+  margin-bottom: 0.5em;
+}
+
+.col1-left,
+.col1-right,
+.col2 {
+  margin-bottom: 1em;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* ==== Col Card styling ==== */
+
+.col-card { padding-bottom: 1.2em; }
+
+.img-span-rw {
+  bottom: 0;
+  left: 0;
+  padding: 0.5em 0.9em;
+  background-color: #e7e7e6;
+  font-size: 17px;
+  color: var(--prime-color);
+}
+
+.img-span-bw {
+  color: #3581f4;
+  padding: 1em 0.8em;
+}
+
+.img-span-bb {
+  background-color: #c2d4d7;
+  padding: 5px 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
+.card-h2 {
+  margin-top: 0.3em;
+  margin-bottom: 0.4em;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.card-p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* ========Sponsored Featured Section============== */
+
+.sponsored-featured {
+  max-width: 100%;
+  line-height: 0;
+}
+
+/* ===== Heroes Section & Culture and Travel Section ===== */
+
+.heroes-section .card-h2,
+.culture-travel-section .card-h2 {
+  font-weight: normal;
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  line-height: 1.1;
+}
+
+.heroes-section .card-p,
+.culture-travel-section .card-p {
+  font-size: 15px;
+  color: rgba(39, 39, 39, 0.5);
+}
+
+/* ===== Opinion Section ===== */
+
+.opinion-section { padding: 0 15px; }
+
+.opinion-description { margin-left: 0.9em; }
+
+.opinion-h2 { font-size: 17px; }
+
+.opinion-author {
+  font-size: 14px;
+  color: #555;
+  margin-top: 0.5em;
+}
+
+.debate-top { border-top: 4px solid var(--prime-color); }
+
+.debate-bottom { border-top: 4px solid #1c87fb; }
+
+.d-inner-top {
+  padding: 1px 0 1em;
+  border-bottom: 3px double #d9d9d9;
+}
+
+.debate-img {
+  width: 95px;
+  height: 95px;
+  flex: none;
+}
+
+.debate-img img {
+  display: block;
+  object-fit: cover;
+}
+
+.debate .opinion-h2 {
+  width: 73%;
+  padding: 1em 0;
+  padding-left: 0.8em;
+}
+
+.debate-author {
+  margin: 1em 0 3em;
+  font-size: 14px;
+}
+
+.debate-author strong { color: #000; }
+
+.vs-span {
+  top: 37%;
+  left: 50%;
+  color: #e2e2e2;
+  background-color: black;
+  font-size: 21px;
+  padding: 0.3em 0.4em;
+  border-radius: 50%;
+}
+
+.abs-avatar {
+  right: 0;
+  bottom: 10%;
+  border-radius: 50%;
+  width: 68px;
+}
+
+/* ===== Latest News Section ===== */
+
+.latest-news-section { padding: 0 15px; }
+
+/* ===== More Stories Section ===== */
+
+.mstories-img-link { padding-right: 1em; }
+
+.more-stories-section .card-h2 {
+  font-size: 17px;
+  margin-top: 0.18em;
+}
+
+/* ===== Sponsored 2 Section ===== */
+
+.sponsored-2-section {
+  line-height: 0;
+  margin-bottom: 0;
+}
+
+.newsettler-block {
+  width: 300px;
+  height: 161px;
+  background-color: #f4f5f6;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 20px 15px;
+  line-height: 1;
+}
+
+.n-logo {
+  padding: 0.2em 0.3em;
+  background-color: var(--prime-color);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.4em 0.4em 1em 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.news-signup {
+  font-size: 19px;
+  color: #333;
+  font-weight: 600;
+  padding-top: 3px;
+}
+
+.news-button {
+  padding: 10px;
+  background-color: #666;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.news-button:hover { background-color: #999; }
+
+.news-link {
+  font-size: 15px;
+  font-weight: 700;
+  color: #666;
+}
+
+/* ============================================ IN MAGAZINE SECTION ========================================= */
+
+.in-magazine-container {
+  line-height: 0.6;
+  padding: 0 15px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 1.2em;
+}
+
+.inmag-first-button {
+  background-color: #f4f5f6;
+  padding: 0.6em;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.inmag-first-button:hover {
+  background-color: #dbdcdd;
+}
+
+.in-mag-card {
+  line-height: 1.1;
+  margin-bottom: 1.8em;
+}
+
+.inmag-red-span {
+  background-color: var(--prime-color);
+  font-size: 16px;
+  padding: 4px 7px;
+  margin: 0.5em 7px 10px 0;
+}
+
+.inmag-rt-span * { color: var(--prime-color); }
+
+.inmag-h2 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.inmag-last-card .inmag-red-span {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+/* ============================================ EDITOR'S PICKS SECTION ======================================= */
+
+.editors-pick-container { padding: 0 15px; }
+
+/* ============================================ Last Articles SECTION ======================================= */
+
+.last-articles-container {
+  padding: 0 15px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.row-h2 {
+  color: var(--prime-color);
+  font-size: 22px;
+}
+
+.la-img-link {
+  margin-bottom: 0.5em;
+  flex: none;
+}
+
+.la-h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.la-flex-box { margin-bottom: 20px; }
+
+.la-flex-box .la-img-link {
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  margin-bottom: 0;
+  margin-right: 0.7em;
+}
+
+.top .la-img-link { height: 64px; }
+
+.la-flex-box img {
+  display: block;
+  top: 0;
+}
+
+.la-flex-box hr { margin: 12px 0; }
+
+.la-flex-h2 { font-weight: 600; }
+
+/* ============================================ Newsletter Section =========================================== */
+
+.newsletter-container {
+  padding: 20px 15px 0;
+}
+
+.newsletter-container h2 {
+  font-size: 16px;
+  color: var(--prime-color);
+  padding: 20px 0 11px;
+}
+
+.newsletter-subscribe,
+.newsletter-newsletter {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.newsletter-subscribe .container-fluid { padding: 30px 0 0; }
+
+.mag-covers {
+  width: 282px;
+  height: 241px;
+}
+
+.mag-covers img {
+  width: 170px;
+  height: 228px;
+}
+
+.mag-covers .second-img {
+  top: 13px;
+  left: 110px;
+}
+
+.news-h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.news-p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.nn-left {
+  height: 160px;
+  width: 100%;
+  margin-bottom: 1em;
+  background: rgba(0, 0, 0, 0) url("../img/starting5-homepage.png") no-repeat scroll center center / cover;
+}
+
+.nn-button {
+  background-color: #f72210;
+  margin-bottom: 20px;
+}
+
+.nn-button:hover { background-color: #de1f0e; }
+
+/* =============================================== Footer Section ============================================ */
+
+footer { padding: 30px 15px 30px; }
+
+.footer-hr { margin: 0 0 12px; }
+
+.footer-logo {
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+
+.f-copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.f-icons { margin-bottom: 12px; }
+
+.f-icon-link i {
+  font-size: 22px;
+  color: #666;
+  margin: 0 5px;
+}
+
+.f-icon-link i:hover { color: var(--primary); }
+
+.footer-bottom {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.f-editions {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.editions-span {
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+.f-abouts { font-family: Arial, Helvetica, sans-serif; }
+
+.f-bottom-link {
+  color: #666;
+  padding-right: 1.2em;
+  white-space: nowrap;
+  line-height: 1.9;
+}
+
+@media screen and (max-width: 390px) {
+  .nav-top-right {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 2px;
+  }
+
+  .nav-sign-in span {
+    font-size: 69%;
+    position: relative;
+    top: -2px;
+  }
+
+  .btn-subs { font-size: 70%; }
+
+  .btn-nav-menu {
+    font-size: 100%;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* ============================================== Nav Section ============================================= */
+
+  /* =========================================== Main Contents Section ====================================== */
+
+  .main-contents {
+    padding: 1.2em 0;
+    background-color: white;
+  }
+
+  .main-contents section {
+    padding: 0 15px;
+    border-bottom: none;
+  }
+
+  .col1-md { width: 44.5%; }
+
+  .col2-md { width: 55.5%; }
+
+  .col1-md,
+  .col2-md {
+    margin-bottom: 0;
+    padding: 0 15px;
+    border: none;
+  }
+
+  /* ==== Col Card styling ==== */
+
+  .card-h2 { font-size: 24px; }
+
+  .card-p { font-size: 15px; }
+
+  /* ===== Top Story Section == */
+
+  .top-story-section .card-h2 { font-size: 22px; }
+
+  /* ===== Sponsored Featured Section ===== */
+
+  .sponsored-featured .col-card,
+  .sponsored-2-section .col-card {
+    max-width: 330px;
+    margin: auto;
+  }
+
+  /* ===== More Stories Section ===== */
+
+  .helper-stretch { padding-bottom: 1.2em; }
+
+  .sticky-part-mstories {
+    position: sticky;
+    top: 0;
+  }
+
+  /* ===== Heroes Section & Culture and Travel Section ===== */
+
+  .heroes-section .card-h2,
+  .culture-travel-section .card-h2 {
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    line-height: 1.1;
+  }
+
+  .heroes-section .card-p,
+  .culture-travel-section .card-p {
+    color: rgba(39, 39, 39, 0.5);
+  }
+
+  /* ============================================ IN MAGAZINE SECTION ========================================= */
+
+  .in-magazine-container {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .inmag-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2em;
+    padding-bottom: 1em;
+  }
+
+  .in-mag-card {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 0;
+  }
+
+  .inmag-img-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: 2em;
+    width: 100%;
+    padding-bottom: 100%;
+    flex: none;
+  }
+
+  .inmag-img-link img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) scale(1.08);
+    display: block;
+    object-fit: cover;
+  }
+
+  .inmag-h2 {
+    font-size: 20px;
+    margin-top: 0.8em;
+  }
+
+  .inmag-last-card .inmag-img-link {
+    height: 71%;
+    position: relative;
+  }
+
+  .inmag-last-card .inmag-red-span {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+  }
+
+  /* ============================================ Last Articles SECTION ======================================= */
+
+  .la-h2 { font-size: 22px; }
+
+  /* ============================================ Newsletter Section =========================================== */
+
+  .newsletter-container h2 { padding: 30px 0 20px; }
+
+  .newsletter-subscribe { margin-bottom: 0; }
+
+  .newsletter-newsletter {
+    margin-bottom: 2px;
+  }
+
+  .newsletter-subscribe,
+  .newsletter-newsletter {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .nn-left {
+    height: auto;
+    width: 40vw;
+    margin-bottom: 0;
+    background: rgba(0, 0, 0, 0) url("../img/starting5-homepage.png") no-repeat scroll center center / cover;
+  }
+
+  .nn-right {
+    margin: 0 2em 0 1em;
+  }
+
+  .nn-button { margin: 30px 0 52px; }
+
+  /* ============================================== Footer Section ============================================= */
+
+  .f-bottom-link {
+    padding-left: 0;
+    padding-right: 1em;
+  }
+
+  .f-bottom-link::after {
+    content: " ";
+    padding-left: 1em;
+    border-right: 1px solid #d9d9d9;
+  }
+
+  .helper-white { margin-bottom: 2px; }
+}
+
+@media screen and (min-width: 992px) {
+  /* ============================================== Nav Section ============================================= */
+
+  nav { position: static; }
+
+  .nav-top { height: auto; }
+
+  .nav-top .time-span { margin: 1.3em 1.84em; }
+
+  .nav-top-right { margin: 0.9em 0.6em; }
+
+  .nav-logo {
+    width: 392px;
+    height: 61px;
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+    position: relative;
+    left: 15px;
+  }
+
+  /* =========================================== Main Contents Section ====================================== */
+
+  .main-contents { padding: 1.2em 0.86em; }
+
+  .col1-lg { width: 28.4%; }
+
+  .col2-lg { width: 41%; }
+
+  .col3-lg {
+    padding: 0 15px;
+    width: 30.6%;
+  }
+
+  .placeholder {
+    height: 570px;
+    margin-bottom: 10px;
+  }
+
+  .placeholder3x {
+    height: 1940px;
+    margin-bottom: 10px;
+  }
+
+  /* ===== Sponsored Featured Section ===== */
+
+  .sponsored-featured {
+    position: absolute;
+    top: 2036px;
+    left: 0;
+  }
+
+  .sponsored-featured .col-card,
+  .sponsored-2-section .col-card { margin: auto; }
+
+  /* ===== Opinion Section ===== */
+
+  .opinion-section {
+    position: absolute;
+    right: 0;
+  }
+
+  /* ===== Latest News Section ===== */
+
+  .latest-news-section {
+    position: absolute;
+    right: 0;
+    top: 922px;
+  }
+
+  /* ===== Sponsored 2 Section ===== */
+
+  .sponsored-2-section {
+    position: absolute;
+    right: 0;
+    top: 1610px;
+  }
+
+  /* ================================== In Magazine Section ====================================== */
+}
