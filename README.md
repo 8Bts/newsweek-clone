@@ -13,7 +13,7 @@ This project is a clone of the home page of <a href="https://www.newsweek.com/">
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/8Bts/newsweek-clone/8b76a72c6d6b2b66c23f418d1802697cc840b374/index.html" target="_blank">Live version</a>
+<a href="https://rawcdn.githack.com/8Bts/newsweek-clone/57013352b3e49f8b081e10849b97377fb45616ea/index.html" target="_blank">Live version</a>
 
 ## Author
 
