@@ -21,7 +21,7 @@ This project is a clone of the home page of <a href="https://www.newsweek.com/">
 
 - Github: [8Bts](https://github.com/8Bts)
 - Twitter: [@Rasheed49705929](https://twitter.com/Rasheed49705929)
-- Linkedin: [linkedin](https://www.linkedin.com/in/rashid-mammadli-62b9b1171/)
+- Linkedin: [linkedin](https://www.linkedin.com/in/mcmizze-price-238a70135/)
 - Email: mcmizze@yahoo.com
 
 ## 🤝 Contributing
